@@ -7,18 +7,27 @@
 
 :root {
   ---gray-100: #f2f2f2;
+  ---gray-200: #D9D9D9;
+  ---gray-300: #808080;
+  ---gray-400: #333333;
+  ---gray-500: #262626;
+  ---gray-600: #1a1a1a;
+  ---gray-700: #0D0D0D;
+  ---purple:   #8284FA;
+  ---purpleDark: #5E60CE;
+  ---blue:     #4EA8DE;
+  ---blueDark: #1E6F9F;
+  ---danger:   #E25858;
 
-
-
-
-  ---gray-600:#1a1a1a;
 }
 
 body {
   min-height: 100vh;
   --webkit-font-smoothing: antialiased;
-  background: var(---gray-600);
+  background: #454545;
   color: var(---gray-100);
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 button {
