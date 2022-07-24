@@ -2,7 +2,7 @@
   margin:0;
   padding: 0;
   box-sizing: border-box;
-  font-family:"Inter", sans-serif ;
+  
 }
 
 :root {
@@ -22,15 +22,21 @@
 }
 
 body {
-  min-height: 100vh;
   --webkit-font-smoothing: antialiased;
-  background: #454545;
+  background: black;
   color: var(---gray-100);
   margin-left: 10%;
   margin-right: 10%;
+  height: 100vh;
 }
 
 button {
   
   cursor: pointer;
+}
+
+body, input, select, button {
+  font-family:"Inter", sans-serif ;
+  font-weight: 400;
+  font-size: 1rem;
 }
