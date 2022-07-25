@@ -1,12 +1,12 @@
-import { Body } from "./components/Body"
 import { Header } from "./components/Header"
+import { Tarefas } from "./components/Tarefas"
 
 function App() {
   
   return (
     < >
     <Header></Header>
-    {/* <Body></Body> */}
+    <Tarefas></Tarefas>
        
     </>
   )

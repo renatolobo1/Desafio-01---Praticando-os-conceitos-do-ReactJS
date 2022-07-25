@@ -1,0 +1,39 @@
+.tarefas {
+  width: 100%;
+  max-width: 46rem;
+  margin: 0 auto;
+  margin-top:5.625rem;
+  padding: 0 1rem;  
+}
+
+.header{
+  display: flex;
+  align-self: center;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+}
+
+.header div {
+  display: flex;
+  align-self: center;
+  gap: 0.8em;
+}
+
+.header p {
+  color: var(---blue);
+  font-size: 0.875rem;
+  font-weight:700;
+}
+
+.header p.textoRoxo{
+  color: var(---purple);  
+}
+
+.header span {
+  background: var(---gray-400);
+  color: var(---gray-200);
+  padding: 3px 9px;
+  border-radius: 0.8rem;
+  font-size: 0.75rem;
+  font-weight:700;
+}
