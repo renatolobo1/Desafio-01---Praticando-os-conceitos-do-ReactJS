@@ -12,10 +12,6 @@
 
 }
 
-.tarefa:first-child {
-  margin-top: 1rem;
-}
-
 .tarefa p {
   font: size 0.875em;
   line-height:1.18rem;
