@@ -41,10 +41,23 @@ function App() {
 
   }
 
+  function toggleTarefaCompleta (tarefaId: string){
+    const newTarefas = tarefas.map(tarefa =>{
+      if(tarefa.id === tarefaId){
+        return {
+          ...tarefa,
+          isComplete: !tarefa.isComplete,
+        }
+      }
+      return tarefa;
+    });
+    setTarefas(newTarefas);
+  }
+
   return (
     < >
     <Header onAdicionarTarefa={adicionarTarefa}/>
-    <Tarefas tarefas={tarefas} onDelete={deletarTarefa}/>         
+    <Tarefas tarefas={tarefas} onDelete={deletarTarefa} onComplete={toggleTarefaCompleta}/>         
     </>
   )
 }

@@ -5,9 +5,10 @@ import styles from './Tarefas.module.css';
 interface Props {
   tarefas: ITarefas[];
   onDelete: (tarefaId: string) => void;
+  onComplete: (tarefaId: string) => void;
 }
 
-export function Tarefas ({ tarefas, onDelete }: Props) {
+export function Tarefas ({ tarefas, onDelete, onComplete }: Props) {
   const tarefasQuantidade = tarefas.length;
   const tarefasCompletadas = tarefas.filter((tarefas) => tarefas.isComplete).length;
 
@@ -26,7 +27,12 @@ export function Tarefas ({ tarefas, onDelete }: Props) {
 
       <div className={styles.lista}>
         {tarefas.map((tarefa) =>(
-          <Tarefa key={tarefa.id} tarefa={tarefa} onDelete={onDelete}/>
+          <Tarefa 
+            key={tarefa.id} 
+            tarefa={tarefa} 
+            onDelete={onDelete}
+            onComplete={onComplete}
+          />
         ))}
      
       </div>

@@ -19,6 +19,11 @@
   margin-right: auto;
 }
 
+p.textoCompleto {
+  text-decoration: line-through;
+  color: var(---gray-300);
+}
+
 .tarefa button {
   background: var(---gray-500);
   border: none;
