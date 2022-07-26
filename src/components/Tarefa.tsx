@@ -6,11 +6,12 @@ import { ITarefas } from '../App';
 
 interface Props {
   tarefa: ITarefas;
+  onDelete: (tarefaId: string) => void;
 }
 
 
 
-export function Tarefa({tarefa}: Props){
+export function Tarefa({tarefa, onDelete}: Props){
   
   return (
     <div className={styles.tarefa}>
@@ -18,7 +19,7 @@ export function Tarefa({tarefa}: Props){
       <p>
         {tarefa.title}
       </p>
-      <button>
+      <button onClick={()=> onDelete(tarefa.id)}>
         <TbTrash size={20}/>
       </button>
     </div>

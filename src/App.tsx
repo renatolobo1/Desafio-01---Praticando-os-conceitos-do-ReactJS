@@ -35,10 +35,16 @@ function App() {
     ]);
   }
 
+  function deletarTarefa(tarefaID:string){
+    const novaTarefa = tarefas.filter((tarefa)=>tarefa.id !== tarefaID);
+    setTarefas(novaTarefa);
+
+  }
+
   return (
     < >
     <Header onAdicionarTarefa={adicionarTarefa}/>
-    <Tarefas tarefas={tarefas}/>         
+    <Tarefas tarefas={tarefas} onDelete={deletarTarefa}/>         
     </>
   )
 }
