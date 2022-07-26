@@ -6,8 +6,7 @@ function App() {
   return (
     < >
     <Header></Header>
-    <Tarefas></Tarefas>
-       
+    <Tarefas></Tarefas>         
     </>
   )
 }

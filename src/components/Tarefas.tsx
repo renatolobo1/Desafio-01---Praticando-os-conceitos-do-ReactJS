@@ -1,3 +1,4 @@
+import { Tarefa } from './Tarefa';
 import styles from './Tarefas.module.css';
 
 export function Tarefas () {
@@ -13,6 +14,11 @@ export function Tarefas () {
           <span>2 de 10</span>
         </div>
       </header>
+
+      <div className={styles.lista}>
+      <Tarefa/>
+      <Tarefa/>
+      </div>
     </section>
   )
 }
