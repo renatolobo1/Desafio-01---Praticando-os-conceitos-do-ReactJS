@@ -11,16 +11,7 @@ export interface ITarefas {
 
 function App() {
   const [tarefas, setTarefas] = useState<ITarefas[]>([
-    {
-      id:'teste',
-      title:'test',
-      isComplete: true,
-    },
-    {
-      id:'teste2',
-      title:'renato',
-      isComplete: false,
-    }
+   
   ]);
 
   function adicionarTarefa(tarefaTitulo:string){

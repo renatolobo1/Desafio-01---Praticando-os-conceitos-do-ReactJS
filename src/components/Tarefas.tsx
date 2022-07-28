@@ -1,3 +1,4 @@
+import { TbClipboardText } from 'react-icons/tb';
 import {ITarefas} from '../App';
 import { Tarefa } from './Tarefa';
 import styles from './Tarefas.module.css';
@@ -34,6 +35,15 @@ export function Tarefas ({ tarefas, onDelete, onComplete }: Props) {
             onComplete={onComplete}
           />
         ))}
+        {tarefas.length <=0 &&(
+          <section className={styles.vazio}>
+            <div>
+              <TbClipboardText size={50}/>
+              <p>Você ainda não tem tarefas cadastradas </p>
+              <span>Crie tarefas e organize seus itens a fazer</span>
+            </div>
+          </section>
+        )}
      
       </div>
     </section>
